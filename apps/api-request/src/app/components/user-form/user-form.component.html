@@ -1,0 +1,75 @@
+<form *ngIf="userForm" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="parkingSpotNumber">Numero da vaga:</label>
+    <input
+      type="text"
+      id="parkingSpotNumber"
+      class="form-control"
+      formControlName="parkingSpotNumber"
+    />
+  </div>
+  <div class="form-group">
+    <label for="licensePlateCar">Placa</label>
+    <input
+      type="licensePlateCar"
+      id="licensePlateCar"
+      class="form-control"
+      formControlName="licensePlateCar"
+    />
+  </div>
+  <div class="form-group">
+    <label for="brandCar">Marca:</label>
+    <input
+      type="text"
+      id="brandCar"
+      class="form-control"
+      formControlName="brandCar"
+    />
+  </div>
+  <div class="form-group">
+    <label for="modelCar">Modelo:</label>
+    <input
+      type="text"
+      id="modelCar"
+      class="form-control"
+      formControlName="modelCar"
+    />
+  </div>
+  <div class="form-group">
+    <label for="colorCar">Cor:</label>
+    <input
+      type="text"
+      id="colorCar"
+      class="form-control"
+      formControlName="colorCar"
+    />
+  </div>
+  <div class="form-group">
+    <label for="responsibleName">Responsavel:</label>
+    <input
+      type="text"
+      id="responsibleName"
+      class="form-control"
+      formControlName="responsibleName"
+    />
+  </div>
+  <div class="form-group">
+    <label for="apartment">Apartamento:</label>
+    <input
+      type="text"
+      id="apartment"
+      class="form-control"
+      formControlName="apartment"
+    />
+  </div>
+  <div class="form-group">
+    <label for="block">Bloco:</label>
+    <input
+      type="text"
+      id="block"
+      class="form-control"
+      formControlName="block"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>

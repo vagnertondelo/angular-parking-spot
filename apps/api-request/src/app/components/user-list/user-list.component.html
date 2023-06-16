@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Lista de usuarios</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor="let user of users">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ user.responsibleName }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ user.modelCar }}</h6>
+            <p class="card-text">{{ user.apartment }}</p>
+            <div>
+              <button (click)="remove(user.id)">Remover</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>
